@@ -1,0 +1,594 @@
+﻿body
+{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	height:3000px;
+}
+
+.hidden
+{
+	display:none;
+}
+
+.container
+{
+	width:80%;
+	margin:auto;
+	height:100%;
+	display:table;
+} /*to leave space after and before & stay in center  */
+
+.overlay
+{
+	background:rgba(49,55,61,0.9);
+	width:100%;
+	height:100%;
+}
+
+.text-center
+{
+	text-align:center;
+}
+
+.upper
+{
+	text-transform:uppercase;
+} /*to make words upper*/
+
+.main-color
+{
+	color:#f7600e;
+}
+
+.main-background
+{
+	background-color:#f7600e;
+}
+
+.header
+{
+	background-image:url('../images/laptop.jpg');
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	color:#fff
+}
+
+.header .navbar
+{
+	overflow:hidden;
+	padding:2% 0;
+}  
+
+.header .overlay .menue
+	{
+		float:right;
+	}
+	
+.header .overlay .menue i
+{
+	margin-left:5px;
+	cursor:pointer;
+}
+
+.header .overlay .menue i:hover
+{
+	color:#f7600e;
+}
+
+.header .intro 
+{
+	margin-top:10%;
+	vertical-align:middle;
+}
+
+.header .intro h1
+{
+	margin:0;
+	font-size:40px;
+	font-weight:800px;
+}
+
+.header .intro p
+{
+	margin:2% 20%;
+	line-height:2;
+	color:#E2E2E2
+}
+
+.header .button button
+{
+	background:transparent;
+	padding:1%;
+	width:150px;
+	font-size:14px;
+	font-weight:bold;
+	border:1px solid #909090;
+	margin:0 2% 19% 2%;
+	border-radius:10px;
+	color:#f7600e;	
+	/*time of moving*/
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	cursor:pointer;
+} 
+
+.header .button button:hover
+{
+	background-color:#f7600e;
+	color:white;
+	border:1px solid #f7600e;
+}
+
+.header .arrow i
+{
+	font-size:25px;
+	border:2px solid #909090;
+	border-radius:50%;
+	height:33px;
+	width:33px;
+	line-height:33px;
+	cursor:pointer;
+}
+
+.header .arrow i:hover
+{
+	border-color:#f7600e;
+}
+/*end header*/
+
+/* strat features */
+.features
+{
+	padding:5% 1%;
+	overflow:hidden;
+}
+
+.features .box
+{
+	width:22%;
+	float:left;
+	margin-right:4%;
+}
+
+.features .box:last-child
+{
+	margin-right:0;
+}
+
+.features .box i
+{
+	color:#f7600e;
+	border:1px solid #ccc;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	line-height:100px;
+	font-size:30px;
+}
+
+.features .box i:hover
+{
+	color:#fff;
+	background-color:#f7600e;
+	-wibkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+	border-color:#f7600e;
+}
+
+.features .box h3
+{
+	color:#505050;
+}
+
+.features .box p
+{
+	color:#909090;
+}
+/* end features */
+
+/* start subscribe */
+.subscribe
+{
+	background-image:url('../images/subscribe.jpg');
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.subscribe form
+{
+	padding:5% 1%;
+	margin:auto;
+	text-align:center;
+	width:60%;
+}
+
+.subscribe form input[type="email"]
+{
+	border-radius:10px;
+	padding:1.8%;
+	width:300px;
+	color:#f7600e;
+	font-size:14px;
+	border:none;
+}
+
+.subscribe form button
+{
+	background:#f7600e;
+	padding:2%;
+	width:150px;
+	font-size:14px;
+	font-weight:bold;
+	border:1px solid #f7600e;
+	margin:0 3%;
+	border-radius:10px;
+	color:#fff;	
+	/*time of moving*/
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	cursor:pointer;
+}
+
+.subscribe form button:hover
+{
+	background:transparent;
+}
+/* end subscribe */
+
+/* start our work */
+.our-work
+{
+	
+}
+.our-work .items-box .item
+{
+	float:left;
+	width:31%;
+	overflow:hidden;
+	border-radius:10px;
+	margin: 0% 1% ;
+	position:relative;
+}
+
+.our-work .items-box .item img
+{
+	border-radius:10px;
+	width:100%;
+}
+
+.our-work .items-box .item .over
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:98%;
+	background-color:rgba(247,96,14,.8);
+	color:#fff;
+	border-radius:10px;
+	display:none;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.our-work .items-box .item:hover .over
+{
+	display:block;
+}
+
+.our-work .items-box .item .over button
+{
+	margin-top:8%;
+	padding:3%;
+	border-color:#fff;
+	color:#fff;
+	background-color:transparent;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	cursor:pointer;
+}
+
+.our-work .items-box .item .over button:hover
+{
+	border-color:#fff;
+	color:#f7600e;
+	background-color:#fff;
+}
+.items-box button
+{
+	border:1px solid #909090;
+	border-radius:10px;
+	color:#999;
+	background-color:transparent;
+	padding:1% 2%;
+	cursor:pointer;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.items-box button:hover
+{
+	color:#fff;
+	background-color:#f7600e;
+	border-color:#f7600e;
+}
+/* end our work */
+
+/* start testimal */
+.testim
+{
+	position:relative;
+	background-image:url(../images/laptop.jpg);
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	margin:10% 0%;
+}
+
+.testim .client
+{
+	padding:2%;
+	color:#fff;
+	
+}
+
+.testim .client img
+{
+	border-radius:50%;
+}
+
+.testim .fa-chevron-right ,
+.testim .fa-chevron-left
+{
+	position:absolute;
+	top:45%;
+	color:#999;
+	cursor:pointer;
+}
+
+.testim .fa-chevron-left
+{
+	left:10%;
+}
+
+.testim .fa-chevron-right
+{
+	right:10%;
+}
+
+.testim .fa-chevron-right:hover ,
+.testim .fa-chevron-left:hover
+{
+	color:#f7600e;
+}
+
+.testim .client p
+{
+	font-style:italic;
+	line-height:2;
+	font-size:15px;
+}
+/* end testimal */
+
+/* start our  team */
+.our-team
+{
+	padding:1% 0% 5% 0%;
+}
+
+.our-team .the-team
+{
+	overflow:hidden;
+	padding:0% 12%;
+}
+
+.our-team .the-team .person
+{
+	float:left;
+	width:25%;
+	line-height:20px;
+	
+}
+
+.our-team .the-team .person img
+{
+	width:90%;
+	border-radius:5px;
+	filter:gray;
+	filter:grayscale(1);
+	-webkit-filter:grayscale(1);
+}
+
+.our-team .the-team .person p
+{
+	font-size:15px;
+}
+
+.person
+{
+	color:gray;
+}
+
+.person a
+{
+	color:gray;
+}
+
+.our-team .the-team .person:hover img
+{
+	filter:none;
+	filter:grayscale(0);
+}
+
+.our-team .the-team .person:hover h5
+{
+	color:#f7600e;
+}
+
+.our-team .the-team .person:hover p
+{
+	color:black;
+}
+
+.our-team .the-team .person:hover .fa-facebook-square
+{
+	color:#3b5998;
+}
+
+.our-team .the-team .person:hover .fa-twitter-square
+{
+	color:#1da1f2;
+}
+
+.our-team .the-team .person:hover .fa-google-plus-square
+{
+	color:#dd4b39;
+}
+/* end our  team */
+
+/* start contact */
+.contact
+{
+	background-image:url('../images/laptop.jpg');
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	color:#fff;
+}
+
+.contact form 
+{
+	width:70%;
+	margin:auto;
+	text-align:center;
+	overflow:hidden;
+	padding:2% 0% 3% 0%;
+}
+
+.contact form input
+{
+	width:30%;
+	padding:1%;
+	margin:.8%;
+	border-radius:5px;
+	border:none;
+}
+
+.contact form textarea
+{
+	width:62%;
+	margin:2%;
+	padding:2%;
+	border-radius:7px;
+}
+
+.contact form button
+{
+	float:left;
+	margin-left:18%;
+	background:#f7600e;
+	padding:1.5%;
+	width:150px;
+	font-size:14px;
+	font-weight:bold;
+	border:1px solid #f7600e;
+	border-radius:10px;
+	color:#fff;	
+	/*time of moving*/
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	cursor:pointer;
+}
+
+.contact form button:hover
+{
+	background-color:transparent;
+}
+
+.contact form .form-icon
+{
+	float:right;
+	margin-right:18%;
+	margin-top:-4%;
+	font-size:120%;
+}
+
+
+.contact form .form-icon a .fa-facebook
+{
+	color:#0077b5;
+}
+
+.contact form .form-icon a .fa-twitter
+{
+	color:#1da1f2;
+}
+
+.contact form .form-icon a .fa-google-plus
+{
+	color:#dd4b39;
+}
+
+.contact form .form-icon a .fa-linkedin
+{
+	color:#0077b5;
+}
+
+.contact form .form-icon .fa-linkedin:hover
+{
+	color:#fff;
+}
+
+
+.contact form .form-icon a .fa-facebook:hover
+{
+	color:#fff;
+}
+
+.contact form .form-icon a .fa-twitter:hover
+{
+	color:#fff;
+}
+
+.contact form .form-icon a .fa-google-plus:hover
+{
+	color:#fff;
+}
+
+/* end contact */
+/* end main */
+
+
+/* start footer */
+.foot
+{
+	background-color:#3b434c;
+	color:#fff;
+	overflow:hidden;
+	padding:2%;
+}
+
+.foot .copy-right
+{
+	float:left;
+}
+
+.foot .design
+{
+	float:right;
+}
+/* end footer */
